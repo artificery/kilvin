@@ -1,0 +1,7 @@
+
+{% extends "_errors.errors" %}
+{% set error_name = '401 - Unauthorized' %}
+
+{% block error_message %}
+	<p>You are not permitted to access this page. Please check the url again.</p>
+{% endblock error_message %}

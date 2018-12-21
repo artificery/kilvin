@@ -1,0 +1,7 @@
+{% extends "_errors.errors" %}
+{% set error_name = '404 - Page Not Found (Site)' %}
+
+{% block error_message %}
+	<p>The page you requested does not exist. Please check the url again.</p>
+	<p>If you believe this is an error, <a href="mailto:support@arliden.com">contact us</a> and we will look into it as soon as possible.</p>
+{% endblock error_message %}

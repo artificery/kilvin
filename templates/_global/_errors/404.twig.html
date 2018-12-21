@@ -1,0 +1,8 @@
+
+{% extends "_errors.errors" %}
+{% set error_name = '404 - Page Not Found' %}
+
+{% block error_message %}
+	<p>The page you requested does not exist. Please check the url again.</p>
+	<p>If you believe this is an error, <a href="mailto:{{Config.get('notification_sender_email')}}">contact us</a> and we will look into it as soon as possible.</p>
+{% endblock error_message %}
