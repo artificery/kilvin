@@ -154,7 +154,7 @@ return [
     |
     */
     'functions' => [
-        'kilvinCpUrl' => ['callback' => 'kilvin_cp_url'],
+        'kilvinCpUrl' => ['callback' => 'kilvinCpUrl'],
         'elixir',
         'head',
         'last',
@@ -205,6 +205,6 @@ return [
         'ascii'           => 'Illuminate\Support\Str@ascii',
         'wordLimit'       => 'Illuminate\Support\Str@words',
         'charactersLimit' => 'Illuminate\Support\Str@limit',
-        'encodeEmailJs'   => 'rot13_javascript',
+        'encodeEmailJs'   => 'encodeEmailJs',
     ]
 ];
