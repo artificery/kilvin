@@ -19,6 +19,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
+        // \Kilvin\Http\Middleware\HtmlPurify::class, // @todo - Consider setting this back up
     ];
 
     /**
@@ -34,10 +35,10 @@ class Kernel extends HttpKernel
             // \Illuminate\Session\Middleware\AuthenticateSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
-            \Kilvin\Http\Middleware\Cms\CmsSite::class,
-            \Kilvin\Http\Middleware\Cms\CmsSession::class,
+            \Kilvin\Http\Middleware\CmsSite::class,
+            \Kilvin\Http\Middleware\CmsSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
-            \Kilvin\Http\Middleware\Cms\Cleanup::class,
+            \Kilvin\Http\Middleware\Cleanup::class,
         ],
 
         'api' => [
