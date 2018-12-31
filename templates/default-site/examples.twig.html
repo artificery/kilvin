@@ -214,7 +214,11 @@
 			</p>
 
 			<p>
-				<strong>Most Recent Entry:</strong> <a href="#">{{ Plugins.Weblogs.mostRecent().title }}</a>
+                {% set entry = Plugins.Element('Entries').with('fields').orderByDesc('entry_date').first() %}
+				<strong>Most Recent Entry:</strong>
+                    {% if entry is defined %}
+                        <a href="#">{{ entry.fields.title }}</a>
+                    {% endif %}
 			</p>
 		</section>
 
