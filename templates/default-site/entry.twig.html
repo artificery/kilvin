@@ -1,50 +1,17 @@
 
 {% extends "_page" %}
-{% set page_title = Site.config('site_name') %}
+
+{% set entry = Plugins.Element('Entries').with('fields').where('url_title', Request.segment(2)).first() %}
+{% set page_title = entry.fields.title %}
 
 {% block main_content %}
-
-	{% set entry = Plugins.Element('Entries').with('fields').where('url_title', Request.segment(2)).first() %}
 
 	{% if entry is null %}
 		{{ abort(404) }}
 	{% endif %}
 
 	{% if entry %}
-		<article class="entry">
-
-	        <header class="entry-header">
-
-	            <h2 class="entry-title">
-	                <a href="{{ entry.url_title }}" title="">{{ entry.fields.title }}</a>
-	            </h2>
-
-	            <div class="entry-meta">
-	                <ul>
-	                    <li>
-	                		{% if entry.entry_date|daysAgo < 1 %}
-								{{ entry.entry_date | relativeDate }} ago
-							{% else %}
-								{{ entry.entry_date | date('M j, Y') }}
-							{% endif %}
-	                    </li>
-	                    <span class="meta-sep">&bull;</span>
-	                    <li>
-	                        <a href="#" title="" rel="category tag">Love</a>,
-	                        <a href="#" title="" rel="category tag">Doom</a>
-	                    </li>
-	                    <span class="meta-sep">&bull;</span>
-	                    <li>Jane Doe</li>
-	                </ul>
-	            </div>
-
-	        </header>
-
-	        <div class="entry-content">
-	            {{ parsedown(entry.fields.body) | raw }}
-	        </div>
-
-	    </article>
+		{{ include('_entry') }}
 	{% endif %}
 
 {% endblock main_content %}
