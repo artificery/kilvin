@@ -4,13 +4,19 @@
 
 {% block main_content %}
 
-	{% for entry in Plugins.Element('Entries').with('fields').mostRecent(5).get() %}
+	{% set entry = Plugins.Element('Entries').with('fields').where('url_title', Request.segment(2)).first() %}
+
+	{% if entry is null %}
+		{{ abort(404) }}
+	{% endif %}
+
+	{% if entry %}
 		<article class="entry">
 
 	        <header class="entry-header">
 
 	            <h2 class="entry-title">
-	                <a href="/entry/{{ entry.url_title }}" title="">{{ entry.fields.title }}</a>
+	                <a href="{{ entry.url_title }}" title="">{{ entry.fields.title }}</a>
 	            </h2>
 
 	            <div class="entry-meta">
@@ -38,7 +44,7 @@
 	            {{ parsedown(entry.fields.body) | raw }}
 	        </div>
 
-	    </article> <!-- end entry -->
-    {% endfor %}
+	    </article>
+	{% endif %}
 
 {% endblock main_content %}
