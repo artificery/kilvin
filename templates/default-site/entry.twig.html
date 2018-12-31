@@ -1,7 +1,7 @@
 
 {% extends "_page" %}
 
-{% set entry = Plugins.Element('Entries').with('fields').where('url_title', Request.segment(2)).first() %}
+{% set entry = Plugins.Weblogs.Entries.with('fields').where('url_title', Request.segment(2)).first() %}
 {% set page_title = entry.fields.title %}
 
 {% block main_content %}
