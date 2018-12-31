@@ -123,7 +123,7 @@ return [
         'Cp',
 
         // Do not remove as it will disable all 'Plugins.' functionality
-        'Plugins' => ['callback' => 'Kilvin\Facades\PluginVariable']
+        'Plugins' => ['callback' => 'Kilvin\Facades\PluginsVariable']
     ],
 
     /*
