@@ -1,0 +1,18 @@
+
+{% extends "_page" %}
+{% set page_title = 'About Page - ' ~ Site.config('site_name') %}
+
+{% block main_content %}
+
+    <ul>
+        {% for entry in Plugins.Element('Entries').with('fields').mostRecent(5).get() %}
+            <li>
+                <a href="{{ URL.secure('entry/' ~ entry.url_title) }}" title="">
+                    {{ entry.fields.title }}
+                </a>
+                - {{ entry.entry_date | date('M j, Y') }}
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock main_content %}
