@@ -99,12 +99,12 @@
             </div>
 
             <div class="widget widget_popular">
-               <h3>Popular Posts</h3>
+               <h3>Most Recent</h3>
 
                <ul class="link-list">
-                  <li><a href="#">Sint cillum consectetur voluptate.</a></li>
-                  <li><a href="#">Lorem ipsum Ullamco commodo.</a></li>
-                  <li><a href="#">Fugiat minim eiusmod do.</a></li>
+                    {% for entry in Plugins.Element('Entries').with('fields').mostRecent(5).get() %}
+                        <li><a href="{{ URL.secure('entry/' ~ entry.url_title) }}" title="">{{ entry.fields.title }}</a></li>
+                    {% endfor %}
                </ul>
 
             </div>
