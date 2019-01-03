@@ -5,13 +5,18 @@
 {% block main_content %}
 
     <ul>
-        {% for entry in Plugins.Element('Entries').with('fields').mostRecent(5).get() %}
-            <li>
-                <a href="{{ URL.secure('entry/' ~ entry.url_title) }}" title="">
-                    {{ entry.fields.title }}
-                </a>
-                - {{ entry.entry_date | date('M j, Y') }}
-            </li>
+        {% for date, entries in Plugins.Element('Entries').with('fields').limit(500).get().groupBy('entry_date_month_year') %}
+            <h2>{{ date }}</h2>
+            <ul>
+                {% for entry in entries %}
+                    <li>
+                        <a href="{{ URL.secure('entry/' ~ entry.url_title) }}" title="">
+                            {{ entry.fields.title }}
+                        </a>
+                        - {{ entry.entry_date | date('M j, Y') }}
+                    </li>
+                {% endfor %}
+            </ul>
         {% endfor %}
     </ul>
 
