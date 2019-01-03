@@ -601,7 +601,7 @@ ol.commentlist {
 
 footer {
    padding-top: 36px;
-   margin-bottom: 42px;
+   margin-bottom: 36px;
    font-size: 13px;
    line-height: 24px;
    position: relative;
@@ -638,14 +638,14 @@ footer ul li a:focus { color: #6C934D; }
 
 /* social links */
 footer .social-links {
-   margin: 18px auto 42px auto;
+   margin: 20px auto;
    padding: 0;
    text-align: center;
 }
 footer .social-links li {
    display: inline-block;
-   font-size: 32px;
-   line-height: 48px;
+   font-size: 25px;
+   line-height: 1.5;
    padding: 0;
    margin: 0 16px;
    color: #444;
