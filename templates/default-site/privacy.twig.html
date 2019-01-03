@@ -1,0 +1,9 @@
+
+{% extends "_page" %}
+{% set page_title = 'About Page - ' ~ Site.config('site_name') %}
+
+{% block main_content %}
+
+	{{ tv.privacy_policy | parsedown | raw }}
+
+{% endblock main_content %}
