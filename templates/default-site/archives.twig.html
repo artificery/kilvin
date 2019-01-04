@@ -1,6 +1,6 @@
 
 {% extends "_page" %}
-{% set page_title = 'About Page - ' ~ Site.config('site_name') %}
+{% set page_title = 'Archives - ' ~ Site.config('site_name') %}
 
 {% block main_content %}
 
@@ -10,7 +10,7 @@
             <ul>
                 {% for entry in entries %}
                     <li>
-                        <a href="{{ URL.secure('entry/' ~ entry.url_title) }}" title="">
+                        <a href="{{ URL.secure('entry/' ~ entry.url_title) }}">
                             {{ entry.fields.title }}
                         </a>
                         - {{ entry.entry_date | date('M j, Y') }}
