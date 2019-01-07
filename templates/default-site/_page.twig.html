@@ -52,9 +52,11 @@
                     <li class="current"><a href="index.html">Home</a></li>
                     <li class="has-children"><a href="#">Categories</a>
                         <ul>
-{% for category in categories().where('category_group_id', 1).with('children').orderBy('category_order').get() %}
-    <li><a href="#">{{ category.category_name }}</a></li>
-{% endfor %}
+                            {% for category in categories().where('category_group_id', 1).orderBy('category_order').get() %}
+                                <li>
+                                    <a href="#">{{ category.category_name }}</a>
+                                </li>
+                            {% endfor %}
                         </ul>
                     </li>
                     <li><a href="{{ URL.secure('about') }}">About</a></li>
@@ -95,8 +97,21 @@
             <div class="widget widget_categories group">
                 <h3>Categories</h3>
                 <ul>
-{% for category in categories().where('category_group_id', 1).orderBy('category_order').with('children').withCount('entries').get() %}
-    <li><a href="#" title="">{{ category.category_name }}</a> ({{ category.entries_count }})</li>
+{% for category in categories().where('category_group_id', 1).isParent.orderBy('category_order').with('children').withCount('entries').get() %}
+    <li>
+        <a href="#" title="">{{ category.category_name }}</a>
+        ({{ category.entries_count }})
+
+        {% if category.children.count > 0 %}
+            <ul>
+                {% for child in category.children %}
+                    <li>
+                        <a href="#">{{ child.category_name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </li>
 {% endfor %}
                 </ul>
             </div>

@@ -320,6 +320,11 @@ ul#nav ul li a {
 	margin-bottom: 24px;
 }
 
+#sidebar .widget_categories ul li ul {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
 /* link List */
 #sidebar .link-list {
    padding: 0;
