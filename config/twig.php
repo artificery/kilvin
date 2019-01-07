@@ -172,6 +172,8 @@ return [
         'ascii'           => 'Illuminate\Support\Str@ascii',
         'wordLimit'       => 'Illuminate\Support\Str@words',
         'charactersLimit' => 'Illuminate\Support\Str@limit',
+        'categories' => ['callback' => 'Kilvin\Plugins\Weblogs\Templates\Elements\Categories@run'],
+        'entries' => ['callback' => 'Kilvin\Plugins\Weblogs\Templates\Elements\Entries@run']
     ],
 
     /*
