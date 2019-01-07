@@ -1,4 +1,4 @@
-/* 
+/*
 =====================================================================
 *   Keep It Simple Media Queries
 *   url: styleshout.com
@@ -10,18 +10,18 @@
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
 
-	/* header styles 
+	/* header styles
 	-------------------------------------------------------------- */
-	header h1#logo-text { 		
-		top: 114px; 
-		left: 18px;	
+	header h1#logo-text {
+		top: 114px;
+		left: 18px;
 	}
-	header h1#logo-text a {	 		
+	header h1#logo-text a {
 		font: normal 68px Georgia, Serif;
-		letter-spacing: -4px;	
-	} 
+		letter-spacing: -4px;
+	}
 
-	/* sidebar 
+	/* sidebar
 	-------------------------------------------------------------- */
    #sidebar { padding-left: 18px; }
 
@@ -31,20 +31,20 @@
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
 
-	/* header styles 
+	/* header styles
 	-------------------------------------------------------------- */
 	header .header-content {
-		background: #fff url(img/header-content-bg.png) no-repeat right top;	
+		background: #fff url(img/header-content-bg.png) no-repeat right top;
 		background-size: 330px 234px;
-	}	
-	header h1#logo-text a {	 		
-		font: normal 60px Georgia, Serif;		
-	} 
-	header p#intro {			
-		font: 15px/24px 'opensans-light', Georgia, Serif;		
-		top: 183px; 
-		left: 30px;		
-	}   
+	}
+	header h1#logo-text a {
+		font: normal 60px Georgia, Serif;
+	}
+	header p#intro {
+		font: 15px/24px 'opensans-light', Georgia, Serif;
+		top: 183px;
+		left: 30px;
+	}
 
 }
 
@@ -52,15 +52,15 @@
 ---------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
 
-	/* header styles 
+	/* header styles
 	-------------------------------------------------------------- */
 	header,
-	header .header-content { 
-		height: 276px;      
+	header .header-content {
+		height: 276px;
 	}
 	header .header-content {
-		background: #fff url(img/header-content-bg.png) no-repeat 50% top;	
-		padding: 0;	
+		background: #fff url(img/header-content-bg.png) no-repeat 50% top;
+		padding: 0;
 		border: none;
 	}
 	header h1#logo-text,
@@ -70,30 +70,30 @@
 		position: static;
 	}
 	header h1#logo-text { padding-top: 108px;	}
-	header h1#logo-text a {	 		
-		font: normal 56px Georgia, Serif;	
-		letter-spacing: -3.5px;	
-	} 
-	header p#intro {			
-		font: 15px/24px 'opensans-light', Georgia, Serif;			
+	header h1#logo-text a {
+		font: normal 56px Georgia, Serif;
+		letter-spacing: -3.5px;
 	}
-	
+	header p#intro {
+		font: 15px/24px 'opensans-light', Georgia, Serif;
+	}
+
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
-      z-index: 999; 
-      float: none;     
+      z-index: 999;
+      float: none;
       position: absolute;
       top: 0;
       right: 0;
-      border-top: 6px solid #9FCC7F; 
+      border-top: 6px solid #9FCC7F;
    }
-   #nav-wrap > a {	   
+   #nav-wrap > a {
       text-align: left;
-		border: none;            
+		border: none;
       font-size: 12px;
       height: 54px;
-      line-height: 54px;     
+      line-height: 54px;
 
       font: 0/0 a;
       text-shadow: none;
@@ -111,37 +111,37 @@
       margin: 0;
       font-size: 25px;
       line-height: 54px;
-      text-align: left;      
-      display: block; 
-      float: right;     
+      text-align: left;
+      display: block;
+      float: right;
 	}
 
    /* hide menu panel */
    #nav-wrap ul#nav {
       padding: 12px 30px 60px 30px;
-      margin: 0;      
+      margin: 0;
       height: auto;
       display: none;
       clear: both;
       /*width: auto; */
-      width: 100%; 
-      
-      float: none;      
+      width: 100%;
+
+      float: none;
       position: relative;
       top: 0;
-      right: 0;           
+      right: 0;
    }
-   
+
    /* display toggle buttons */
 	.no-js #nav-wrap:not( :target ) > a:first-of-type,
 	.no-js #nav-wrap:target  > a:last-of-type  {
 	   display: block;
-	} 
-   .js #nav-wrap a { display: block; }  
+	}
+   .js #nav-wrap a { display: block; }
 
    /* display menu panels - no JS*/
    .no-js #nav-wrap:target ul#nav  {
-      display: block;           
+      display: block;
    }
 
 	/* remove float left on 1st level list items */
@@ -149,7 +149,7 @@
 
    ul#nav > li {
       display: block;
-      height: auto;      
+      height: auto;
       text-align: left;
       border-bottom: 1px dotted #D3D5DA;
       padding: 6px 0;
@@ -157,22 +157,22 @@
    ul#nav > li:first-child {
 		border-top: 1px dotted #D3D5DA;
    }
-  
-   ul#nav li a {  
-      display: block;   
-      width: auto;  
-      padding: 0;      
-      padding: 12px 0; 
+
+   ul#nav li a {
+      display: block;
+      width: auto;
+      padding: 0;
+      padding: 12px 0;
       line-height: 16px; /* reset line-height from 40px */
       border: none;
-   } 
+   }
    ul#nav li.current > a {
    	background: none;
    	border-radius: none;
    	border: none;
    	padding: 12px 0;
    	color: #111;
-   } 
+   }
 
    ul#nav li.has-children > a:after {
 		content: "+";
@@ -184,7 +184,7 @@
 
 		position: absolute;
 		right: 10px;
-		top: 15px;	
+		top: 15px;
 	}
 
    /* sub menu	 */
@@ -194,22 +194,22 @@
 		border: none;
 		padding-bottom: 0;
 	}
-	
+
 	/* sub menu anchor links */
 	ul#nav ul li a { padding: 6px 15px 6px 8px; }
 
 	/* on hover */
-	ul#nav li.has-children:hover > a:after { content: "-"; }  
+	ul#nav li.has-children:hover > a:after { content: "-"; }
 
-	/* content 
+	/* content
 	-------------------------------------------------------------- */
 	#content-wrap { padding-top: 0; }
-	#content-wrap  #main { padding-right: 30px;}	
+	#content-wrap  #main { padding-right: 30px;}
 
 	.page h2,
 	.entry h2,
 	.entry h2 a {
-		font: 28px/36px 'opensans-semibold', sans-serif;	
+		font: 28px/36px 'opensans-semibold', sans-serif;
 		letter-spacing: -.5px;
 	}
 
@@ -219,7 +219,7 @@
 		text-align: center;
 	}
 
-	/* sidebar 
+	/* sidebar
 	-------------------------------------------------------------- */
 	#sidebar { padding-left: 30px; }
 
@@ -230,7 +230,7 @@
 		margin-right: 6px;
 	}
 
-	/* entry 
+	/* entry
 	-------------------------------------------------------------- */
 	.entry .entry-meta ul { margin-top: 9px; }
 	.entry .entry-meta ul li { }
@@ -269,9 +269,9 @@
    .commentlist  li .avatar { display: none; }
 
    /* comment form */
-   #comments form { 
-   	margin-left: 0; 
-		border-bottom: 1px solid #E8E8E8;		
+   #comments form {
+   	margin-left: 0;
+		border-bottom: 1px solid #E8E8E8;
    }
    #comments form input,
    #comments form textarea,
@@ -290,17 +290,17 @@
    .pagenav { text-align: center; }
 
 
-	/* page 
+	/* page
 	-------------------------------------------------------------- */
    .page { border-bottom: 1px solid #E8E8E8; }
 
 
-	/* footer 
+	/* footer
 	-------------------------------------------------------------- */
 	footer .social-links { margin-bottom: 36px; }
 	footer .social-links li {
 		font-size: 28px;
-		line-height: 42px;	
+		line-height: 42px;
 		margin: 0 8px;
 	}
 	footer .navigate { margin-bottom: 30px; }
@@ -315,66 +315,66 @@
 	}
 
  	/* Go To Top Button */
-	#go-top { right: 20px; } 
+	#go-top { right: 20px; }
 	#go-top a {
 		width: 42px;
 		height: 42px;
 		line-height: 42px;
-	}   
+	}
 
 }
 
 
 /* screenwidth less than or equal 480px - mobile wide
   -------------------------------------------------------------------------- */
-@media only screen and (max-width: 480px) {   
+@media only screen and (max-width: 480px) {
 
-	/* header styles 
+	/* header styles
 	-------------------------------------------------------------- */
 	header h1#logo-text { padding-top: 105px;	}
-	header h1#logo-text a {	font: normal 52px Georgia, Serif; } 
+	header h1#logo-text a {	font: normal 52px Georgia, Serif; }
 	header p#intro { font: 14px/24px 'opensans-light', Georgia, Serif; }
 
 	/* mobile navigation
    --------------------------------------------------------------- */
-	#nav-wrap > a { right: 30px; }  
+	#nav-wrap > a { right: 30px; }
    #nav-wrap { width: 100%; }
-   #nav-wrap ul#nav { width: 100%; }         
+   #nav-wrap ul#nav { width: 100%; }
 
 }
 
 /* screenwidth less than or equal 420px - mobile narrow
   -------------------------------------------------------------------------- */
-@media only screen and (max-width: 420px) { 
+@media only screen and (max-width: 420px) {
 
-	/* header styles 
+	/* header styles
 	-------------------------------------------------------------- */
 	header,
-	header .header-content { 
-		height: 260px;      
+	header .header-content {
+		height: 260px;
 	}
 	header .header-content {
-		background: #fff url(img/header-content-bg.png) no-repeat 50% top;	
+		background: #fff url(img/header-content-bg.png) no-repeat 50% top;
 		background-size: 300px 213px;
 	}
-   header h1#logo-text a {	 		
-		font: normal 46px Georgia, Serif;		
-	} 
-	header p#intro {			
-		font: 13px/24px 'opensans-light', Georgia, Serif;			
+   header h1#logo-text a {
+		font: normal 46px Georgia, Serif;
+	}
+	header p#intro {
+		font: 13px/24px 'opensans-light', Georgia, Serif;
 	}
 
-	/* content 
+	/* content
 	-------------------------------------------------------------- */
 	#content-wrap { margin-top: -24px; }
 
-} 
+}
 
 /* make sure the menu is visible on larger screens
   -------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 768px) {
-   
+
    #nav-wrap ul#nav { display: block !important; }
 
 }
