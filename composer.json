@@ -67,6 +67,10 @@
         {
             "type": "path",
             "url": "../kilvin-plugin-groot"
+        },
+        {
+            "type": "path",
+            "url": "../kilvin-docs"
         }
     ]
 }
