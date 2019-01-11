@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "75af021f6c22f30b6216f7ee2a5e3fa1",
+    "content-hash": "4c1100f9d0e7457833460f711e64b6ec",
     "packages": [
         {
             "name": "artificery/kilvin-cms",
@@ -12,11 +12,10 @@
             "dist": {
                 "type": "path",
                 "url": "../kilvin-cms",
-                "reference": "52b8e6f7b1a7cbae1537c66ab9a0b63872fc43c8",
+                "reference": "da50bf528c412c745fed4777a7ff7eeef9716f90",
                 "shasum": null
             },
             "require": {
-                "artificery/kilvin-docs": "dev-master",
                 "doctrine/dbal": "2.5.*",
                 "erusev/parsedown": "^1.6",
                 "ezyang/htmlpurifier": "^4.9",
@@ -70,7 +69,7 @@
             "dist": {
                 "type": "path",
                 "url": "../kilvin-docs",
-                "reference": "15cb0d58bff802f1d06e25f9d1d3cbfa1d832487",
+                "reference": "124201c9276a9231a291ed3cf9e8c29777ed66d2",
                 "shasum": null
             },
             "type": "library",
@@ -5589,6 +5588,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "artificery/kilvin-cms": 20,
+        "artificery/kilvin-docs": 20,
         "artificery/kilvin-plugin-groot": 20
     },
     "prefer-stable": true,

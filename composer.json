@@ -10,6 +10,7 @@
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",
         "artificery/kilvin-cms": "dev-master",
+        "artificery/kilvin-docs": "dev-master",
         "artificery/kilvin-plugin-groot": "dev-master"
     },
     "require-dev": {
