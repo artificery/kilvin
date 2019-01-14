@@ -7,7 +7,7 @@
 
 Kilvin CMS is a content management system built on top of the [Laravel framework](https://laravel.com). The project is currently in a development state and is not ready for use in production. We do not suggest using this for live websites at this time since major architectural changes are still possible, which could break existing functionality.
 
-The CMS is built as a composer package and that code can be found at the [Kilvin-CMS Repo](https://github.com/artificery/kilvin-cms).  Documentation is in progress and can be found in the [Kilvin Docs Repo](https://github.com/artificery/kilvin-docs). The documentation is also viewable within the main control panel for your site, ex: https://mysite.com/admin/docs 
+The CMS is built as a composer package and that code can be found at the [Kilvin-CMS Repo](https://github.com/artificery/kilvin-cms).  Documentation is in progress and can be found in the [Kilvin Docs Repo](https://github.com/artificery/kilvin-docs). The documentation is also viewable within the main control panel for your site, ex: https://mysite.com/admin/docs
 
 ## Installing Kilvin CMS
 
@@ -37,7 +37,7 @@ The CMS is built as a composer package and that code can be found at the [Kilvin
 
 We would like to extend our thanks to the following sponsors for helping fund Kilvin CMS development. If you are interested in becoming a sponsor, please visit the Kilvin CMS [Patreon page](http://patreon.com/reedmaniac):
 
-- **[Paul Burdick](https://paulburdick.me)** - The laziest man on the planet.
+- **[Paul Burdick](https://paulburdick.me)** - Coder. Geek. Outdoorsman. Lover of Knowledge. Pursuer of Fun.
 
 ## Security Vulnerabilities
 
