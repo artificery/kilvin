@@ -33,14 +33,6 @@ The CMS is built as a composer package and that code can be found at the [Kilvin
  - Configure your webserver to make the `./public` directory your web root.
  - Direct your browser to the /installer URL on your new site and run the installer. Example: https://mysite.com/installer
 
-
-## Multiple Sites
-
- - Weblogs, Fields, Categories, Statuses, Member Groups, Members, and most preferences are global and NOT site-specific
- - Templates and Stats are Site-specific
- - Member Groups have permissions that allow you to restrict them to only certain Sites, Weblogs, and Statuses
-
-
 ## Kilvin CMS Sponsors
 
 We would like to extend our thanks to the following sponsors for helping fund Kilvin CMS development. If you are interested in becoming a sponsor, please visit the Kilvin CMS [Patreon page](http://patreon.com/reedmaniac):
