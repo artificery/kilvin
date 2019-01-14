@@ -7,6 +7,8 @@
 
 Kilvin CMS is a content management system built on top of the [Laravel framework](https://laravel.com). The project is currently in a development state and is not ready for use in production. We do not suggest using this for live websites at this time since major architectural changes are still possible, which could break existing functionality.
 
+The CMS is built as a composer package and that code can be found at the [Kilvin-CMS Repo](https://github.com/artificery/kilvin-cms).  Documentation is in progress and can be found in the [Kilvin Docs Repo](https://github.com/artificery/kilvin-docs). The documentation is also viewable within the main control panel for your site, ex: https://mysite.com/admin/docs 
+
 ## Installing Kilvin CMS
 
 ### Server Requirements
@@ -45,13 +47,12 @@ We would like to extend our thanks to the following sponsors for helping fund Ki
 
 - **[Paul Burdick](https://paulburdick.me)** - The laziest man on the planet.
 
-
-
 ## Security Vulnerabilities
 
 If you discover a security vulnerability within Kilvin CMS, please send an e-mail to Paul Burdick at paul@reedmaniac.com. All security vulnerabilities will be promptly addressed.
 
 ## License
 
-The Kilvin CMS is currently not open source. Once it reaches a more stable state, this will be addressed.
+The Kilvin CMS is currently not open source. Once it reaches a more stable state, this will be addressed.  We're thinking an MIT license.
+
 
