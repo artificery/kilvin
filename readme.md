@@ -24,14 +24,16 @@ The CMS is built as a composer package and that code can be found at the [Kilvin
 
  - Insure you have a server meeting the above requirements. [Laravel Homestead](https://laravel.com/docs/5.7/homestead) is a superb development environment for Kilvin CMS.
  - Clone [this GitHub repo](https://github.com/artificery/kilvin) onto your server.
- - In your terminal, run the following [Composer](https://getcomposer.org) command in your cloned directory to install Kilvin's dependencies: `composer create-project --prefer-dist`.
+ - In your terminal, run the following [Composer](https://getcomposer.org) command in the cloned directory above to install Kilvin's dependencies: `composer create-project --prefer-dist`.
  - Permissions. Insure that the following files and directories are writeable on your server. Homestead is set up to allow this automatically:
    - .env
    - ./storage
    - ./templates
- - Create a database for your new site in MySQL/MariaDB.
  - Configure your webserver to make the `./public` directory your web root.
+ - Create a database for your new site in MySQL/MariaDB.
  - Direct your browser to the /installer URL on your new site and run the installer. Example: https://mysite.com/installer
+ - Go through the installer steps to install the CMS.
+ - That's it! After completion, the installer will direct you to your Kilvin CMS control panel for the site.
 
 ## Kilvin CMS Sponsors
 
