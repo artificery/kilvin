@@ -5,7 +5,7 @@
  * Configuration options for Twig Service in the CMS
  * - Mostly based off the TwigBridge library at https://github.com/rcrowe/TwigBridge/
  * - Our implementation has a number of CMS and Laravel modifications + restrictions
- * - For Kilvin, we follow a convention of functions, filters, and facdes + their methos being camel case
+ * - For Kilvin, we follow a convention of functions, filters, and facdes + their methods being camelCase
  * - Variables are snake_case.
  */
 return [
