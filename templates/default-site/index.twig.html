@@ -4,7 +4,7 @@
 
 {% block main_content %}
 
-	{% for entry in Plugins.Element('Entries').with('fields').mostRecent(5).get() %}
+	{% for entry in Plugins.load('Weblogs.Entries').with('fields').mostRecent(5).get() %}
 		{{ include('_entry', {truncate_body: true}) }}
     {% endfor %}
 
