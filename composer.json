@@ -59,19 +59,5 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../kilvin-cms"
-        },
-        {
-            "type": "path",
-            "url": "../kilvin-plugin-groot"
-        },
-        {
-            "type": "path",
-            "url": "../kilvin-docs"
-        }
-    ]
+    }
 }
