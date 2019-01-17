@@ -1,4 +1,5 @@
 tasks.txt
+composer.lock
 /public/images/uploads
 /node_modules
 /public/hot
