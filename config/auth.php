@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Kilvin\Models\Member::class, // @todo - Probably switch all of this over to User to more closely resemble Laravel's approach
+            'model' => Kilvin\Models\Member::class,
         ],
 
         // 'users' => [
