@@ -18,8 +18,8 @@ return [
     | Is System On?
     |--------------------------------------------------------------------------
     |
-    | Whether the Kilvin CMS is turned on. If not, nothing is loaded, not even routes
-    | @todo - Does this do anything yet? Updated by Administration...but...
+    | Whether the Kilvin CMS is turned on. If not, only Admins can view CP.
+    | Everyone else will get an offline site message OR a 403 for the CP.
     |
     */
 
@@ -31,7 +31,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Ability to disable all Kilvin CMS created Events.
-    | @todo - Does this do anything yet? Updated by Administration...but...
+    | @todo - Updated by Administration...but does not affect anything as no events yet.
     |
     */
 	'disable_events'    => env('KILVIN_DISABLE_EVENTS', false),
