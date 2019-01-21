@@ -24,7 +24,7 @@ return [
         'base_template_class' => 'Kilvin\Libraries\Twig\Template',
 
         // Set to false to disable caching.
-        'cache' => false, // @todo - Enable prior to production
+        'cache' => env('APP_ENV') == 'production' ? true : false,
 
         // When developing with Twig, it's useful to recompile the template
         // whenever the source code changes. If you don't provide a value
