@@ -4,6 +4,8 @@
  * Laravel Purifier configuration file
  * http://htmlpurifier.org/
  * Config options are here: http://htmlpurifier.org/live/configdoc/plain.html
+ *
+ * To enable, you must add \Kilvin\Http\Middleware\HtmlPurify::class to the App\Http\Kernel $middlware array
  */
 
 return [
