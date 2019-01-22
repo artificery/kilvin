@@ -1,7 +1,15 @@
 
-{% extends "_errors.errors" %}
+{% extends "_errors.global-errors" %}
+{% set error_code = '401' %}
 {% set error_name = '401 - Unauthorized' %}
 
+{% block image %}
+    <div
+        style="background-image: url({{ asset('/svg/403.svg') }});"
+        class="absolute pin bg-cover bg-no-repeat md:bg-left lg:bg-center">
+    </div>
+{% endblock image %}
+
 {% block error_message %}
-	<p>You are not permitted to access this page. Please check the url again.</p>
+	You are not permitted to access this page. Please check the url again.
 {% endblock error_message %}

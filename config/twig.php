@@ -155,7 +155,7 @@ return [
     */
     'functions' => [
         'kilvinCpUrl' => ['callback' => 'kilvinCpUrl'],
-        'elixir',
+        'asset',
         'head',
         'last',
         'mix',

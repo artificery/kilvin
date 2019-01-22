@@ -1,8 +1,13 @@
 
-{% extends "_errors.errors" %}
+{% extends "_errors.global-errors" %}
+{% set error_code = '404' %}
 {% set error_name = '404 - Page Not Found' %}
 
+{% block image %}
+    <div style="background-image: url({{ asset('/svg/404.svg') }});" class="absolute pin bg-cover bg-no-repeat md:bg-left lg:bg-center">
+    </div>
+{% endblock image %}
+
 {% block error_message %}
-	<p>The page you requested does not exist. Please check the url again.</p>
-	<p>If you believe this is an error, <a href="mailto:{{Config.get('notification_sender_email')}}">contact us</a> and we will look into it as soon as possible.</p>
+	The page you requested does not exist. Please check the url again. If you believe this is an error, <a href="mailto:{{Config.get('notification_sender_email')}}">contact us</a> and we will look into it as soon as possible.
 {% endblock error_message %}

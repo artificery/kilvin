@@ -1,0 +1,16 @@
+
+{% extends "_errors.global-errors" %}
+
+{% set error_name = '500 - Unable to Handle Request' %}
+{% set error_code = '500' %}
+
+{% block image %}
+    <div style="background-image: url({{ asset('/svg/500.svg') }});" class="absolute pin bg-cover bg-no-repeat md:bg-left lg:bg-center">
+    </div>
+{% endblock image %}
+
+{% block error_message %}
+	There was a problem rendering this page, please <a href="mailto:{{Config.get('notification_sender_email')}}">contact us</a> and we will look into it as soon as possible.
+{% endblock error_message %}
+
+
