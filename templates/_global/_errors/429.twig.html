@@ -1,0 +1,16 @@
+
+{% extends "_errors.global-errors" %}
+
+{% set error_name = '429 - Too Many Requests' %}
+{% set error_code = '429' %}
+
+{% block image %}
+    <div style="background-image: url({{ asset('/svg/403.svg') }});" class="absolute pin bg-cover bg-no-repeat md:bg-left lg:bg-center">
+    </div>
+{% endblock image %}
+
+{% block error_message %}
+	Sorry, you are making too many errors to our servers.
+{% endblock error_message %}
+
+
