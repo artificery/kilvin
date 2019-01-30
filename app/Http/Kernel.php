@@ -38,6 +38,7 @@ class Kernel extends HttpKernel
         ],
 
         'kilvin.cms' => [
+            'throttle:300,1', // max 300 routes per minute
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
