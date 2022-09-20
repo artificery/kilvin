@@ -2,8 +2,8 @@
 
 namespace App\Exceptions;
 
-use Exception;
 use Kilvin\Exceptions\Handler as ExceptionHandler;
+use Throwable;
 
 class Handler extends ExceptionHandler
 {
@@ -29,10 +29,12 @@ class Handler extends ExceptionHandler
     /**
      * Report or log an exception.
      *
-     * @param  \Exception  $exception
+     * @param  \Throwable  $e
      * @return void
+     *
+     * @throws \Throwable
      */
-    public function report(Exception $exception)
+    public function report(Throwable $e)
     {
         parent::report($exception);
     }
@@ -41,10 +43,12 @@ class Handler extends ExceptionHandler
      * Render an exception into an HTTP response.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception  $exception
-     * @return \Illuminate\Http\Response
+     * @param  \Throwable  $e
+     * @return \Symfony\Component\HttpFoundation\Response
+     *
+     * @throws \Throwable
      */
-    public function render($request, Exception $exception)
+    public function render($request, Throwable $e)
     {
         return parent::render($request, $exception);
     }
