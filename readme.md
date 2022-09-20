@@ -1,6 +1,4 @@
 
-<p align="center"><img src="https://kilvincms.com/images/kilvin-icon-small.png"></p>
-
 # Kilvin CMS
 
 ## About Kilvin
@@ -12,7 +10,7 @@ The CMS is built as a composer package and that code can be found at the [Kilvin
 ## Installing Kilvin CMS
 
 ### Server Requirements
- - PHP 7.1.3 or later with safe mode disabled
+ - PHP 8.1 or later with safe mode disabled
  - MySQL 5.5.0 or later, with the InnoDB storage engine installed. MariaDB works too.
  - A web server (Apache, Nginx)
  - OpenSSL PHP Extension
@@ -48,5 +46,9 @@ If you discover a security vulnerability within Kilvin CMS, please send an e-mai
 ## License
 
 The Kilvin CMS is currently not open source. Once it reaches a more stable state, this will be addressed.  We're thinking an MIT license.
+
+
+<p align="center"><img src="https://kilvincms.com/images/kilvin-icon-small.png"></p>
+
 
 
