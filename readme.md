@@ -1,6 +1,10 @@
 
 # Kilvin CMS
 
+## IMPORTANT
+
+Slowy in the process of updating this code to the most current version of PHP and Laravel, so expect things to be broken.
+
 ## About Kilvin
 
 Kilvin CMS is a content management system built on top of the [Laravel framework](https://laravel.com). The project is currently in a development state and is not ready for use in production. We do not suggest using this for live websites at this time since major architectural changes are still possible, which could break existing functionality.
