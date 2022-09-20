@@ -228,7 +228,7 @@
 			<h2>Template Variables and Globals</h2>
 
 			<p>
-				<strong>Global CMS Variable:</strong> {{cms.version}}
+				<strong>Global Kilvin Variable:</strong> {{kilvin.version}}
 			</p>
 
 			<p>
@@ -238,6 +238,25 @@
 			<p>
 				<strong>UTC :</strong> {{utc|date('Y/m/d H:i')}}
 			</p>
+
+            <p><strong>Site Vars:</strong>
+                <ul>
+                    <li>{{ currentSite.name }}</li>
+                    <li>{{ currentSite.handle }}</li>
+                </ul>
+            </p>
+
+            <p><strong>Current User Vars:</strong>
+
+                {% if currentUser is defined %}
+                    <ul>
+                        <li>{{ currentUser.screen_name }}</li>
+                        <li>{{ currentUser.email }}</li>
+                    </ul>
+                {% else %}
+                    No User found.
+                {% endif %}
+            </p>
 
 		</section>
 
