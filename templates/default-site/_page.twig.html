@@ -44,25 +44,23 @@
     <nav id="nav-wrap">
 
         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show Menu</a>
-           <a class="mobile-btn" href="#" title="Hide navigation">Hide Menu</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Hide Menu</a>
 
         <div class="row">
-
-                <ul id="nav" class="nav">
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li class="has-children"><a href="#">Categories</a>
-                        <ul>
-                            {% for category in categories().where('category_group_id', 1).orderBy('category_order').get() %}
-                                <li>
-                                    <a href="#">{{ category.category_name }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-                    <li><a href="{{ URL.secure('about') }}">About</a></li>
-                    <li><a href="{{ URL.secure('privacy-policy') }}">Privacy</a></li>
-                </ul> <!-- end #nav -->
-
+            <ul id="nav" class="nav">
+                <li class="current"><a href="index.html">Home</a></li>
+                <li class="has-children"><a href="#">Categories</a>
+                    <ul>
+                        {% for category in categories().where('category_group_id', 1).orderBy('category_order').get() %}
+                            <li>
+                                <a href="#">{{ category.category_name }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li><a href="{{ URL.to('about') }}">About</a></li>
+                <li><a href="{{ URL.to('privacy-policy') }}">Privacy</a></li>
+            </ul> <!-- end #nav -->
         </div>
 
     </nav> <!-- end #nav-wrap -->
